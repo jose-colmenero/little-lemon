@@ -1,11 +1,11 @@
 import React from "react";
 
-const Header = () => {
+const Menu = () => {
     return (
-        <header>
+        <main>
             <a href="https://littlelemon.com/home"><img src={require("./logo.png")} alt="logo"/></a>
-        </header>
+        </main>
     )
 }
 
-export default Header
+export default Menu
