@@ -1,0 +1,15 @@
+.ConfirmedBooking {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: '50vh';
+    width: '100%';
+    font-size: '2rem';
+    font-weight: 'bold';
+    color: 'green';
+    text-align: 'center';
+    text-transform: 'uppercase';
+    padding: '1rem';
+}

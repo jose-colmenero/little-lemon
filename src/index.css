@@ -1,3 +1,56 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,6 +59,242 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html {
+  background-color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Markazi Text";
+}
+
+.banner {
+  position: relative;
+  color: #ffffff;
+  text-shadow: #3b3b3b 1px 1px 10px, black 5px 5px 2px;
+}
+
+.top {
+  position: absolute;
+  top: 10%;
+  left: 1vw;
+}
+
+.top2 {
+  position: absolute;
+  top: 15%;
+  left: 1vw;
+}
+
+.top3 {
+  position: absolute;
+  top: 30%;
+  left: 1vw;
+}
+
+h1 {
+  font-size: 3vw;
+  color: #f4ce14 ;
+}
+
+h2 {
+  font-size: 2.5vw;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 1vw;
+  color: #ffffff;
+
+}
+
+h4 {
+  font-size: 0.75vw;
+  text-align: left;
+}
+
+p {
+  font-size: 0.75vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+a {
+  font-size: 0.75vw;
+  color: #000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1vw;
+}
+
+header > img {
+  border: 1vw solid #56bb91;
+  padding: 2vw;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.navi {
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1.5vw;
+}
+
+.scaler:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+}
+
+body {
+  background-color: aliceblue;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+section {
+  display: flex;
+  flex: 1 1 1;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5%;
+}
+
+article {
+  flex: 33.33%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: beige;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.articles {
+  padding-bottom: 3vw;
+}
+
+.activeimg:hover {
+  transform: scale(110%);
+  transition: 2s;
+}
+
+footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  gap: 10%;
+  align-items: center;
+  border-top: 3px solid #ccc;
+}
+
+.footerimg {
+  border: 0.5vw solid #4cb6a8;
+  padding: 0.5vw;
+  border-radius: 1000px;
+}
+
+div {
+  flex: 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  margin-top: 1vw;
+}
+
+form {
+  display: grid;
+  max-width: 200px;
+  gap: 20px
+
+}
+
+.Hero {
+  background-color: #495e57 ;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #f4ce14;
+  color: #495e57;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.button:active {
+  background-color: #495e57;
+  color: #ffffff;
+}
+
+.About {
+  justify-content: center;
+}
+
+.menu {
+  justify-content: center;
+}
+
+.order {
+  justify-content: center;
+}
+
+.login {
+  justify-content: center;
+}
+
+.reservations {
+  justify-content: center;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

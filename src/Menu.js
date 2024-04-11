@@ -2,8 +2,9 @@ import React from "react";
 
 const Menu = () => {
     return (
-        <main>
-            <a href="https://littlelemon.com/home"><img src={require("./logo.png")} alt="logo"/></a>
+        <main className="menu">
+            <h1>Sorry, this page is still under construction!</h1>
+            <a href="/"><img src={require("./wrench.png")} alt="logo"/></a>
         </main>
     )
 }

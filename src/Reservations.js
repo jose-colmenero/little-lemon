@@ -1,9 +1,13 @@
 import React from "react";
+import "./index.css"
+import BookingForm from "./BookingForm";
 
-const Reservations = () => {
+function Reservations(props) {
     return (
-        <main>
-            <a href="https://littlelemon.com/home"><img src={require("./logo.png")} alt="logo"/></a>
+        <main className="reservations">
+            <h1>Reservation:</h1>
+            <BookingForm availableTimes={props.availableTimes} dispatchTimes={props.dispatchTimes} submitForm={props.submitForm} isFormSubmitted={props.isFormSubmitted} />
+
         </main>
     )
 }

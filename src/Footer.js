@@ -1,31 +1,37 @@
 import React from "react";
+import "./Footer.css"
+
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
     return (
-        <footer>
-            <a href="https://littlelemon.com/home"><img src={require("./footer_logo.png")} alt="footer_logo"/></a>
-            <ul>
-                <li><h3>Doormat Navigation</h3></li>
-                <li><a href="https://littlelemon.com/home">Home</a></li>
-                <li><a href="https://littlelemon.com/menu">Menu</a></li>
-                <li><a href="https://littlelemon.com/reservations">Reservations</a></li>
-                <li><a href="https://littlelemon.com/order">Order Online</a></li>
-                <li><a href="https://littlelemon.com/about">About</a></li>
-                <li><a href="https://littlelemon.com/login">Login</a></li>
-            </ul>
-            <ul>
-                <li><h3>Contact</h3></li>
-                <li><h4>Adress</h4></li>
-                <li><h4>Phone number</h4></li>
-                <li><h4>Email</h4></li>
-            </ul>
-            <ul>
-                <li><h3>Socials</h3></li>
-                <li><a href="https://meta.com/littlelemon"><img src={require("./logo.png")} alt="meta_logo"/></a></li>
-                <li><a href="https://instagram.com?littlelemon"><img src={require("./logo.png")} alt="instagram_logo"/></a></li>
-                <li><a href="https://x.com/littlelemon"><img src={require("./logo.png")} alt="x_logo"/></a></li>
-            </ul>
+        <footer className="footer">
+            
+            <div className="footer_columns">
+                <a href="/" ><img src={require("./footer_logo.png") } alt="footer_logo" className="footer_logo"/></a>
+                <ul>
+                    <li><h1>Doormat Navigation</h1></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/menu">Menu</Link></li>
+                    <li><Link to="/reservations">Reservations</Link></li>
+                    <li><Link to="/order-online">Order Online</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/login">Login</Link></li>
+                </ul>
+                <ul>
+                    <li><h1>Contact</h1></li>
+                    <li><h2>Adress</h2></li>
+                    <li><h2>Phone number</h2></li>
+                    <li><h2>Email</h2></li>
+                </ul>
+                <ul>
+                    <li><h1>Socials</h1></li>
+                    <li><a href="https://meta.com/littlelemon"><img src={require("./meta_logo.png")} alt="meta_logo" className="socials"/></a></li>
+                    <li><a href="https://instagram.com/littlelemon"><img src={require("./instagram_logo.webp")} alt="instagram_logo" className="socials"/></a></li>
+                    <li><a href="https://x.com/littlelemon"><img src={require("./x_logo.png")} alt="x_logo" className="socials"/></a></li>
+                </ul>
+            </div>
         </footer>
     )
 }
