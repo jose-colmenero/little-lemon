@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Login.css"
 
 const Login = () => {
     return (
         <main className="login">
             <h1>Sorry, this page is still under construction!</h1>
-            <a href="/"><img src={require("./wrench.png")} alt="logo"/></a>
+            <Link to="/"><img src={require("./wrench.png")} alt="logo" className="wrench lilscaler"/></Link>
         </main>
     )
 }

@@ -1,10 +1,15 @@
 import React from "react";
 import "./Header.css"
+import Nav from "./Nav"
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
         <header>
-            <a href="https://littlelemon.com/home"><img src={require("./logo.png")} alt="logo"/></a>
+            <div className="headerdiv">
+                <Link to="/" ><img src={require("./logo.png")} alt="logo" className="headerimg"/></Link>
+                <Nav />
+            </div>
         </header>
     )
 }

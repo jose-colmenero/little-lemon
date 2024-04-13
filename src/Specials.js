@@ -1,8 +1,8 @@
 import React from "react";
 import "./Specials.css"
-import { useNavigate } from "react-router-dom"
-
+import { Link, useNavigate } from "react-router-dom"
 import { MdDeliveryDining } from 'react-icons/md';
+import Button  from "./Button.js"
 
 const foodItems = [
     {
@@ -36,28 +36,27 @@ const foodItems = [
 const FoodCard = ({props}) => {
 
     const navigate = useNavigate()
-    
+
     function handleClick() {
         navigate("/order-online")
     }
 
     return (
 
-        <div className="item">
-            <div className="image" /* style={{backgroundImage: `url(${props.image})`}} */>
-                <img className="image" src={props.image} alt={props.name} />
-            </div>
+        <div className="item lilscaler">
+
+            <img className="image" src={props.image} alt={props.name} />
+
             <div className="details">
                 <div className="name-price">
                     <h3 className="name">{props.name}</h3>
                     <p className="price">{props.price}</p>
                 </div>
                 <p className="description">{props.description}</p>
-                <a className="anchor" href="/order-online">Order a delivery</a>
-                <button className="order" onClick={handleClick}>
-                    <MdDeliveryDining className="delivery" />
-                </button>
-
+                <div className="delivery">
+                    <Link to="/order-online" className="anchor">Order a delivery</Link>
+                    <Button title={<MdDeliveryDining />} onClick={handleClick} styler={"bike_button"} valid={true} />
+                </div>
             </div>
         </div>
     );
@@ -65,12 +64,18 @@ const FoodCard = ({props}) => {
 
 const Specials = () => {
 
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/order-online");
+    };
+
     return (
 
         <main className="specials">
             <div className="title-and-btn">
-                <h1 className="title">Specials</h1>
-                 <button className="button">Online Menu</button>
+                <h1 className="title">This week's specials!</h1>
+                <Button title={"Online Menu"} onClick={handleClick} styler={"button"} valid={true}/>
             </div>
             <div className="food-card-holder">
                 <div className="food">{

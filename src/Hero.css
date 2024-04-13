@@ -1,13 +1,19 @@
-.Hero {
-    background-color: #495E57;
-    font-family: 'Markazi Text', serif;
-    color: #EDEFEE;
-    /* border: 1px solid red; */
+.herobackground{
+    background: #495e57;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.hero {
+    height: 100%;
+    padding: 2rem 0;
+    display: grid;
     align-items: center;
-    padding: 15px;
+    grid-column-gap: 2rem;
+    grid-template: "info image";
+    grid-template-columns: 60fr 40fr;
+    max-width: 65rem;
+    margin: 0 auto;
 }
 
 .hero_div {
@@ -54,6 +60,11 @@
     background-size: auto 100%;
 
     border-radius: 16px;
+}
+
+.imgHero:hover {
+    transform: scale(105%);
+    transition: 1s;
 }
 
 @media screen and (max-width: 1020px){

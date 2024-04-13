@@ -1,0 +1,46 @@
+.button {
+    background: #f4ce14;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #f4ce14;
+    color: #495e57;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.button:active {
+    background-color: #495e57;
+    color: white;
+}
+
+.button:disabled{
+    background-color: rgb(88, 88, 88);
+    color: #afafaf;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(102%);
+    transition: 0.1s;
+}
+
+.bike_button {
+    background: #f4ce14;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #495e57;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.bike_button:active {
+    background-color: #f4ce14;
+    color: white;
+}
+
+.bike_button:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: 0.1s;
+}

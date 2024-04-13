@@ -11,8 +11,8 @@ const About = () => {
                     <h3 className="about_h3">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.t non  proident, sunt in </h3>
                 </section>
                 <section className="about_imgs">
-                    <img className="img1" src={require("./restaurant chef A.jpg")} alt="chef" />
-                    <img className="img2" src={require("./Mario and Adrian B.jpg")} alt="mario_and_adrian"/>
+                    <img className="img1 scaler" src={require("./restaurant chef A.jpg")} alt="chef" />
+                    <img className="img2 scaler" src={require("./Mario and Adrian B.jpg")} alt="mario_and_adrian"/>
                 </section>
             </article>
         </main>

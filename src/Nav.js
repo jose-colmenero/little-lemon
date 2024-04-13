@@ -7,12 +7,12 @@ const Nav = () => {
 
         <nav className="nav">
             <ul>
-                <li><Link to="/" className="scaler">Home</Link></li>
-                <li><Link to="/menu" className="scaler">Menu</Link></li>
-                <li><Link to="/reservations" className="scaler">Reservations</Link></li>
-                <li><Link to="/order-online" className="scaler">Order Online</Link></li>
-                <li><Link to="/about" className="scaler">About</Link></li>
-                <li><Link to="/login" className="scaler">Login</Link></li>
+                <li className="scaler"><Link to="/" >Home</Link></li>
+                <li className="scaler"><Link to="/menu" >Menu</Link></li>
+                <li className="scaler"><Link to="/reservations" >Reservations</Link></li>
+                <li className="scaler"><Link to="/order-online" >Order Online</Link></li>
+                <li className="scaler"><Link to="/about" >About</Link></li>
+                <li className="scaler"><Link to="/login" >Login</Link></li>
             </ul>
         </nav>
 

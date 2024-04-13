@@ -3,23 +3,20 @@
   justify-content: center;
   align-items: center;
   font-family: 'Karla', sans-serif;
-  /* border: 1px solid red; */
-
+  margin-top: 150px;
+  margin-bottom: 100px;
   flex-wrap: wrap;
 }
 
 .about_text{
   width: 40%;
-  /* border: 1px solid rebeccapurple; */
   display: inline-block;
 }
 
 .about_h1 {
   font-size: 64px;
   color: #F4CE14;
-  /* border: 1px solid rebeccapurple; */
   display: inline-block;
-
 }
 
 .about_h2 {
@@ -27,7 +24,6 @@
   font-size: 40px;
   color: #495E57;
   display: inline-block;
-  /* border: 1px solid rebeccapurple; */
 }
 
 .about_h3 {
@@ -37,20 +33,17 @@
   font-size: 18px;
   color: #495E57;
   display: inline-block;
-  /* border: 1px solid rebeccapurple; */
 }
 
 .about_imgs{
   display: flex;
   position: relative;
-  /* border: 5px solid rgb(0, 166, 255); */
   width: fit-content;
 }
 
 .img1 {
   width: 273px;
   height: 338px;
-  /* border: 3px solid red; */
 
   background-repeat: no-repeat;
   background-position: center;
@@ -88,13 +81,16 @@
     .img1 {
       width: 203px;
       height: 278px;
-      display: block;
+      display: inline;
     }
 
     .img2 {
-      position: absolute;
-      top: 100px;
-      left: 180px;
+      width: 203px;
+      height: 278px;
+      display: inline;
+      position: relative;
+      top: 0px;
+      left: 20px;
     }
 }
 

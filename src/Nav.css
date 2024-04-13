@@ -1,137 +1,94 @@
-.app__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.topbar {
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  max-width: 65rem;
+  margin: 0 auto;
 }
 
-.p-text {
-    font-size: 0.8rem;
-    text-align: left;
-    color: var(--gray-color);
-    line-height: 1.5;
-
-
+.logo {
+  height: 50px;
 }
 
-.app__navbar {
-    width: 100%;
+li {
+  list-style-type: none;
+}
 
-    display: flex;
+nav {
+  display: flex;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin-left: 1rem;
+  color: inherit;
+}
+
+ul li a {
+  margin-left: 1rem;
+  color: black;
+  text-decoration: none;
+  font-family: Karla;
+  font-size: 1.1em;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.scaler:hover{
+  transform: scale(105%);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+  .topbar {
     justify-content: space-between;
+    background-color: white;
+    padding: 1rem 1rem;
+    display: flex;
     align-items: center;
-
-    padding: 1rem 2rem;
-    background: rgba(210, 210, 210, 0.65);
-
-    backdrop-filter: blur(4px);
-    --webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 4rem;
+    width: -webkit-fill-available;
+    margin: 0 auto;
     position: fixed;
-    z-index: 2;
+    margin-bottom:96px;
+  }
+  .menu-toggle {
+    display: block;
+  }
 
-    font-family: 'Markazi Text', serif;
-}
-
-
-.app__navbar-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.app__navbar-links {
-    flex: 1;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 15px;
-    list-style-type: none;
-}
-
-.link {
-    color: #495E57;
-    text-decoration: none;
-    flex-direction: column;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 600;
-
-    transition: all 0.3s ease-in-out;
-}
-.link:hover {
-    color: gray;
-}
-.app__navbar-menu {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #EDEFEE;
-}
-.app__navbar-hamburger {
-    width: 70%;
-    height: 70%;
-    color: #495E57;
-}
-
-.app__navbar-menu > div {
+  .menu-list {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 5;
-
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: white;
     padding: 1rem;
-    width: 80%;
-    height: 100vh;
+    display: none;
+  }
 
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-
-    background-color: #f2f2f2;
-
-    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
-
-}
-
-.app__navbar-cancel {
-    width: 35px;
-    height: 35px;
-    color: #495E57;
-}
-.app__navbar-menu > div {
+  .nav.open .menu-list {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 15px;
-}
-.app__navbar-menu > div > .link {
-    font-size: 28px;
-}
+  }
 
-@media screen and (min-width: 900px) {
-    .app__navbar-menu {
-        display: none;
-    }
-    .app__navbar-menu > div {
-        display: none;
-    }
-}
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
 
-@media screen and (max-width: 900px) {
-    .app__navbar-links {
-        display: none;
-    }
-    
-}
-
-@media screen and (min-width: 2000px) {
-    .p-text{
-        font-size: 1.75rem;
-    }
+  ul li a {
+    margin-left: 1rem;
+    color: #495e57;
+    text-decoration: none;
+    font-family: Karla;
+    font-size: 1.1em;
+  }
 }

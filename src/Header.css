@@ -1,12 +1,14 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap'); */
 
-.app__header {
-    background-color: #495E57;
+header {
+    background-color: #ffffff;
     font-family: 'Markazi Text', serif;
-    color: #EDEFEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header {
+.headerdiv {
     /* border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
@@ -49,16 +51,12 @@ header {
 
 
 
-.app__header-image {
+.headerimg {
     /* border: 1px solid red; */
-    width: 450px;
-    height: 550px;
+    width: auto;
 
-    background-repeat: none;
     background-position: center;
     background-size: auto 100%;
-
-    border-radius: 16px;
 }
 
 @media screen and (max-width: 1020px){

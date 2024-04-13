@@ -1,21 +1,23 @@
-.reservation-container {
+.formfield {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
 
-.containter-item-title {
+label {
     color: #fff;
     font-size: 20px;
     text-align: center;
 }
 
-.reservation-button {
+.reservation_button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 3vh;
+    margin-top: 25px;
 }
 
 input, select {
