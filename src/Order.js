@@ -6,6 +6,7 @@ const Order = () => {
     return (
         <main className="order_online">
             <h1>Sorry, this page is still under construction!</h1>
+            <br/>
             <Link to="/"><img src={require("./wrench.png")} alt="logo" className="wrench lilscaler"/></Link>
         </main>
     )

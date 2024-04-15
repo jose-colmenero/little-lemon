@@ -4,16 +4,60 @@
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: '2rem';
     font-weight: 'bold';
     text-align: 'center';
 
     margin: '10vw';
     color: #495e57;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
-.check{
-    width: 10vw;
+a {
+    display: flex;
+}
+
+.confirmed_h1 {
+    margin-top: 50px;
+    font-family: "Karla";
+    font-size: 48px;
+}
+
+.confirmed_h2 {
+    font-family: "Karla";
+    font-size: 32px;
+}
+
+.check {
+    max-width: 25%;
     height: auto;
+    margin: auto;
+}
+
+.lilscaler:hover {
+    transform: scale(102%);
+    transition: 0.1s;
+}
+
+@media screen and (max-width: 767px) {
+    .check {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .confirmed_h1 {
+        margin: auto;
+        padding-left: 1.5px;
+        padding-right: 1.5px;
+    }
+
+    .confirmed_h2 {
+        margin: auto;
+    }
+
+    .ConfirmedBooking {
+        margin-bottom: 50px;
+    }
 }

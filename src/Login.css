@@ -4,21 +4,31 @@
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: '2rem';
     font-weight: 'bold';
     text-align: 'center';
 
     margin: '10vw';
     color: #495e57;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
 .wrench {
-    width: 10vw;
+    max-width: 25%;
     height: auto;
+    margin: auto;
 }
 
 .lilscaler:hover {
     transform: scale(102%);
     transition: 0.1s;
+}
+
+@media screen and (max-width: 767px) {
+    .wrench {
+        max-width: 50%;
+        height: auto;
+    }
 }

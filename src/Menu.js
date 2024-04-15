@@ -5,7 +5,8 @@ import "./Menu.css"
 const Menu = () => {
     return (
         <main className="menu">
-            <h1>Sorry, this page is still under construction!</h1>
+            <h1 className="menu_h1">Sorry, this page is still under construction!</h1>
+            <br/>
             <Link to="/"><img src={require("./wrench.png")} alt="logo" className="wrench lilscaler"/></Link>
         </main>
     )

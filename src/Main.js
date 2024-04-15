@@ -1,6 +1,5 @@
 import React, { useState, useReducer } from "react";
 import "./index.css"
-
 import {Route, Routes, useNavigate} from "react-router-dom";
 import Menu from "./Menu";
 import Reservations from "./Reservations";
@@ -10,6 +9,7 @@ import Login from "./LogIn";
 import Homepage from "./Homepage";
 import {fetchAPI, submitAPI} from "./API"
 import ConfirmedBooking from "./ConfirmedBooking";
+
 
 const updateTimes = (availableTimes, date) => {
     const response = fetchAPI(new Date(date))

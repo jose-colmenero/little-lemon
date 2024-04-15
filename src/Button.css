@@ -13,12 +13,12 @@
     color: white;
 }
 
-.button:disabled{
+.button:disabled {
     background-color: rgb(88, 88, 88);
     color: #afafaf;
 }
 
-.button:hover{
+.button:hover {
     cursor: pointer;
     transform: scale(102%);
     transition: 0.1s;

@@ -8,12 +8,13 @@
   flex-wrap: wrap;
 }
 
-.about_text{
+.about_text {
   width: 40%;
   display: inline-block;
 }
 
 .about_h1 {
+  font-family: 'Markazi Text', serif;;
   font-size: 64px;
   color: #F4CE14;
   display: inline-block;
@@ -35,7 +36,7 @@
   display: inline-block;
 }
 
-.about_imgs{
+.about_imgs {
   display: flex;
   position: relative;
   width: fit-content;
@@ -44,10 +45,7 @@
 .img1 {
   width: 273px;
   height: 338px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
+  object-fit: cover;
 
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -56,6 +54,7 @@
 .img2 {
   width: 273px;
   height: 338px;
+  object-fit: cover;
 
   border-radius: 10px;
   position: absolute;
@@ -65,6 +64,7 @@
 
 @media screen and (max-width: 1200px) {
     .about_article {
+      margin-top: 0px;
       flex-direction: column;
     }
 
@@ -94,9 +94,22 @@
     }
 }
 
-@media screen and (max-width: 700px){
-  .about_imgs{
-      width: 80%;
+@media screen and (max-width: 700px) {
+  .about_article {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .about_imgs {
+    width: 80%;
+  }
+
+  .about_h2 {
+    margin-top: 0px;
+  }
+
+  .about_h3 {
+    margin-top: 30px;
   }
 
   .img2 {

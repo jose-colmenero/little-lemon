@@ -16,8 +16,8 @@ const ConfirmedBooking = () => {
     return (
         <div className="ConfirmedBooking">
             <img className="check lilscaler" src={require("./check.png")} alt="check"/>
-            <h1>Your reservation is Confirmed</h1>
-            <h2>See you soon!</h2>
+            <h1 className="confirmed_h1">Your reservation is Confirmed</h1>
+            <h2 className="confirmed_h2">See you soon!</h2>
         </div>
     );
 }

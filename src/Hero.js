@@ -17,7 +17,7 @@ const Hero = () => {
                 <div className="hero_div">
                     <h1 className="hero_h1">Little Lemon</h1>
                     <h2 className="hero_h2">Chicago</h2>
-                    <h3 className="hero_h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</h3>
+                    <h3 className="hero_h3">We are a Mediterranean restaurant, focused on traditional recipes served with a modern twist!</h3>
                     <Button title="Reserve a Table" styler={"button"} onClick={handleClick} valid={true} />
                 </div>
 

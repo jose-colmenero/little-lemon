@@ -4,10 +4,10 @@ import { AiFillStar } from 'react-icons/ai';
 
 
 const reviews = [
-    {image: require("./user1.png"), name: "Client 1", review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-    {image: require("./user2.png"), name: "Client 2", review: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"},
-    {image: require("./user3.png"), name: "Client 3", review: "Vitae aliquet nec ullamcorper sit. Sed elementum tempus egestas sed sed risus pretium quam"},
-    {image: require("./user4.png"), name: "Client 4", review: "Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Velit aliquet sagittis id consectetur purus"},
+    {image: require("./user1.png"), name: "Marina C.", review:  "Best bruchetta ever!! Got them for a coworkers party and they were a hit! Definitely going back for more!"},
+    {image: require("./user2.png"), name: "Peter J.", review: "Everyone went crazy over them. They also couldn't believe how beautiful they were. Totally impressed!"},
+    {image: require("./user3.png"), name: "Karl M.", review: "Such a delightful little restaurant! You can never go wrong ordering from them."},
+    {image: require("./user4.png"), name: "Jasmin S.", review: "Wonderful, beautiful, super tasty and all natural ingredients. Highly recommend Little Lemon and will dine again!!"}
 ]
 
 const ReviewCard = ({props}) => {

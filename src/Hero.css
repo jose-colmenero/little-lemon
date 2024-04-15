@@ -1,4 +1,4 @@
-.herobackground{
+.herobackground {
     background: #495e57;
     height: 100%;
     display: flex;
@@ -12,8 +12,10 @@
     grid-column-gap: 2rem;
     grid-template: "info image";
     grid-template-columns: 60fr 40fr;
-    max-width: 65rem;
-    margin: 0 auto;
+    max-width: 85rem;
+    margin: auto;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .hero_div {
@@ -21,21 +23,25 @@
     flex-direction: column;
     gap: 25px;
     width: 50%;
-    /* border: 1px solid red; */
     padding: 15px;
 }
 
 .hero_h1 {
+    font-family: 'Markazi Text', serif;
     font-size: 85px;
     font-weight: 900;
     color: #F4CE14;
 }
+
 .hero_h2 {
     font-size: 40px;
     font-weight: 400;
+    color: #ffffff;
 }
+
 .hero_h3 {
     font-size: 24px;
+    color: #ffffff;
 }
 
 .hero_button {
@@ -51,7 +57,6 @@
 
 
 .imgHero {
-    /* border: 1px solid red; */
     width: 450px;
     height: 550px;
 
@@ -67,22 +72,39 @@
     transition: 1s;
 }
 
-@media screen and (max-width: 1020px){
-    .imgHero{
+@media screen and (max-width: 1020px) {
+    .imgHero {
         width: 350px;
         height: 450px;
+    }
+
+    .hero {
+        margin-right: 50px;
+        margin-left: 50px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .Hero {
+    .hero {
         justify-content: center;
-        gap: 25px;
-    }
-    .hero_div {
-             width: 80%;
     }
 
+    .hero_div {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .imgHero {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero {
+        padding: 0px;
+        margin-bottom: 20px;
+    }
     .imgHero {
         display: none;
     }

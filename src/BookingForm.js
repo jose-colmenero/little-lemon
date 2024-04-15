@@ -5,11 +5,11 @@ import Button from "./Button.js"
 
 function BookingForm (props) {
 
-    const defaultTime = props.availableTimes[0];
+   /*  const defaultTime = props.availableTimes[0]; */
 
     const [reservation, setFormValues] = useState({
       date: "",
-      time: defaultTime,
+      time: ""/* defaultTime */,
       guests: "",
       occasion: "",
     });
@@ -68,6 +68,7 @@ function BookingForm (props) {
                     <label htmlFor="occasion">Occasion:</label>
                     <select name="occasion" id="occasion" onChange={handleInputChange}
                         className={props.isFormSubmitted && !reservation.occasion ? "error" : ""}>
+                        <option value=""> --- Select an Occasion ---</option>
                         <option value="birthday">Birthday</option>
                         <option value="anniversary">Anniversary</option>
                     </select>

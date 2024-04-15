@@ -1,4 +1,3 @@
-
 const seededRandom = (seed) => {
   const m = 2 ** 35 - 31;
   const a = 185852;

@@ -91,9 +91,7 @@
 .image {
     width: 264px;
     height: 182px;
-    background-repeat: none;
-    background-position: center;
-    background-size: 100%;
+
     border-radius: 16px 16px 0 0;
 }
 
@@ -141,6 +139,15 @@
 }
 
 @media screen and (max-width: 580px) {
+    .specials {
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .title-and-btn {
+        margin-bottom: 0px;
+    }
+
     .food {
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(1, 1fr);
