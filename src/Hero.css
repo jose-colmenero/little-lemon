@@ -14,8 +14,8 @@
     grid-template-columns: 60fr 40fr;
     max-width: 85rem;
     margin: auto;
-    margin-right: 50px;
-    margin-left: 50px;
+ /*    margin-right: 50px;
+    margin-left: 50px; */
 }
 
 .hero_div {

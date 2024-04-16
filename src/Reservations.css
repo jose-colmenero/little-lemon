@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 600px) {
   .reservations {
-    height: 70vh;
+    height: 600px;
     width: 95vw;
     margin: auto;
     margin-bottom: 20px;

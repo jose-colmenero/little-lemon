@@ -24,10 +24,10 @@ const foodItems = [
         image : require("./lemon dessert.jpg")
     },
     {
-        name: "New Recipe",
-        price: "$10.00",
-        description: "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
-        image : require("./lemon dessert.jpg")
+        name: "Hummus",
+        price: "$8.99",
+        description: "Traditional hummus, pita bread, carrots, cucumbers and dressed Mediterranean veggies with feta.",
+        image : require("./hummus.jpg")
     },
 
 ]
